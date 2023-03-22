@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #989898;
+}
+
+/* Common Styles */
+
+h1 {font-size: 30px;}
+h2 {font-size: 24px;}
+h3 {font-size: 22px;}
+h4 {font-size: 20px;}
+h5 {font-size: 18px;}
+
+h1, h2, h3, h4, h5 {
+    color: #4f4f4f;
+}
+h1 {
+    font-style: strong;
+}
+
+/* Applying Flex into Logo, Nav */
+header {
+    display: flex;
+    width: 100%;
+    height: 64px;
+    align-items: center;
+    padding: 24px;
+}
+
+header > h5 {
+    color: #989898 ; /*COME BACK LATER to fix colmarfonts*/
+}
+
+header > img {
+    padding-left: 24px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+nav a {
+    color:#4f4f4f;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.introContainer {
+    display: flex;
+    background-color: #c4c2c2;
+    padding: 32px 24px;
+
+}
+
+.introImageContainer {
+    display: flex;
+}
+
+.introImageContainer > img {
+    width: 60vw;
+    
+}
+
+.introTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 24px;
+
+}
+
+.introTextContainer > div {
+    background-color: #515151;
+    width: 60%;
+    color: white;
+    padding: 8px;
+    border: 1px solid green;
+ 
+}
+
+/*Start of 2nd portion of the body to contain info  */
+.infoContainer {
+    display: flex;
+    background-color: white;
+    border: 1px solid red;
+    padding: 32px 24px;
+
+}
+
+.infoContainerLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoContainerLeft > img {
+    width: 60vw;
+}
+
+.infoContainerLeft > div {
+    width: 60vw;
+    padding: 12px 0px 12px 0px;
+
+}
+
+.infoContainerRight {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    padding-left: 24px;
+    width: 100%;
+}
+
+.infoContainerRight > div {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blue;
+
+}
+
+.infoContainerRight > div > img {
+    height: auto;
+    width: 35%;
+    padding: 16px;
+    border: 1px solid green;
+
+}
+
+.infoContainerRight > div > div {
+    padding: 16px;
+    width: 65%;
+}
+
+.infoContainerRight > div > div > h3 {
+    padding-bottom: 12px;
+    
+}
+
+.infoContainerRight > div > div > p {
+    padding-bottom: 5px;
+}
+/*End of 2nd portion of the body */
+
+/*Start of 3rd portion of body to contain text and courses*/
+.learnContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #e1dfdf;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.learnTextContainer {
+    padding-bottom: 32px;
+
+}
+
+.learnImagesContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid red;
+    gap: 32px
+    
+}
+
+.learnImagesContainerRow {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+}
+
+.learnImagesContainerText > p {
+    padding: 16px 0px 16px 16px; 
+}
+.learnImagesContainerText > h4 {
+    padding: 16px 0px 0px 16px; 
+
+}
+
+.learnImageBoxes {
+    height: auto;
+}
+
+.learnImageBoxes > img {
+    height: auto;
+    width: 100%;
+}
+
+.learnImagesContainerText {
+    background-color: white;
+}
+/* End of 3rd portion of body */
+
+.learnThesisTextContainer{
+    display:flex;
+    background-color: white;
+    padding: 32px 24px;
+    border: 1px solid green;
+    align-items: center;
+    justify-content: center;
+}
+
+.learnThesisContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 32px 24px;
+    border: 1px solid red;
+    align-items: center;
+}
+
+.learnContainerLeft {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    width: 60%;
+}
+
+.learnContainerLeft > div {
+    padding: 24px
+}
+
+
+
+/*
+.learnContainerRight {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.rightSideContainer1 {
+    display: flex;
+    flex-direction: row;
+    height:auto;
+    width: 100%;
+    padding: 16px;
+    border: 1px solid blue;
+    background-color:grey;
+    opacity: 0.8;
+}
+.rightSideContainer1 > div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rightSideContainer1 > img {
+    height: auto;
+    width: 35%;
+    padding: 0px;
+}
+
+.rightSideContainer1 > h3 {
+    padding: 16px;
+}
+*/
+
+.learnContainerRight {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    padding-left: 24px;
+    width: 35%;
+}
+
+.learnContainerRight > div {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blue;
+
+}
+
+.learnContainerRight > div > img {
+    height: auto;
+    width: 35%;
+    padding: 16px;
+    border: 1px solid green;
+
+}
+
+.learnContainerRight > div > div {
+    padding: 16px;
+    width: 30%;
+}
+
+.learnContainerRight > div > div > h3 {
+    padding-bottom: 12px;
+    
+}
+
+.learnContainerRight > div > div > p {
+    padding-bottom: 5px;
+}
+
+
+.copyright {
+    margin-left: 24px;
+}
+
+.copyright > p {
+    text-align: left;
+    padding-top: 16px
+
+}
+
+/*Responsive Web Design Look*/
+@media screen and (max-width: 720px) {
+    nav {
+        flex-direction:column;
+    }
+}
